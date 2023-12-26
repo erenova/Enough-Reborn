@@ -109,7 +109,7 @@ while 1:
                     if callable(attribute_value):
                         if attribute.startswith('__') == False:
                             exec("sms."+attribute+"()")
-                            sleep(aralik)
+                            sleep(0.2)
         for i in tel_liste:
             sms = SendSms(i, mail)
             if isinstance(kere, int):
